@@ -2,21 +2,10 @@ body {
     margin:30px;
 }
 h1 {
-  color: rgb(35, 218, 59);
+  color: rgb(0, 26, 255);
   text-align: center;
-  
 }
 
 p{
-   text-align: center; 
-}
-div{
-  position:absolute;
-    top:0; left:0; bottom:0; right:0;
-    height:10%;
-    margin:10% auto;
-}
-
-item{
-  vertical-align: middle;
+    text-align: center;
 }
