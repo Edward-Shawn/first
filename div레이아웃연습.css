@@ -1,0 +1,35 @@
+div#wrap{
+    width: 400px;
+    margin: auto;
+    display:table;
+}
+div#head{
+    width: 400px;
+    background-color: lawngreen;
+}
+div#main{
+    margin-top: 5px;
+}
+div#side_left{
+    width: 100px;
+    height: 300px;
+    background-color: fuchsia;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+div#contents{
+    width: 290px;
+    height: 300px;
+    background-color: greenyellow;
+    float: left;
+}
+div#footer{
+    width: 400px;
+    height: 200px;
+    margin-top: 5px;
+    background-color: khaki;
+    text-align: center;
+    
+    vertical-align: middle;
+}
