@@ -1,0 +1,28 @@
+body {
+    width:440px;
+  }
+  header, nav, section, article, aside, footer {
+ 
+    width:400px;
+    margin:4px;
+    padding:4px;
+    background-color:#ddd;
+    text-align:center;
+  }
+  section {
+    float:left;
+    width:280px;
+    height:60px;
+  }
+  article {
+    width:264px;
+    background-color:#efefef;
+  }
+  aside {
+    float:left;
+    width:104px;
+    height:60px;
+  }
+  footer {
+    overflow:hidden;
+  }
