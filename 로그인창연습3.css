@@ -1,0 +1,46 @@
+body{
+    background-color: cadetblue;
+    font-family: sans-serif;
+}
+h1{
+    color: rgb(56, 177, 92);
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    background-color: darkcyan;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.box input[type="text"],.box input[type="password"]{
+    border: 0;
+    color: rgb(194, 247, 210);
+    background: none;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid rgb(252, 252, 252);
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    
+}
+
+.box input[type="submit"]{
+    background: none;
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border: 3px solid white;
+    border-radius: 15px;
+    color: rgb(194, 247, 210);
+}
+
+.box input[type="submit"]:hover{
+
+}
