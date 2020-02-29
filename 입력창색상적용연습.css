@@ -1,0 +1,33 @@
+body{
+   background-color: darkslategrey;
+}
+h1{
+    color: forestgreen;
+}
+
+.box{
+    font-family: sans-serif;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(9, 46, 42);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    
+}
+.box input[type="text"],.box input[type="password"] {
+    background: none;
+    border: 0;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #2a8b66;
+    color: rgb(247, 12, 247);
+    text-align: center;
+    margin: 4px;
+}
+input::-webkit-input-placeholder { 
+    color: ivory;
+}
