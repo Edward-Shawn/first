@@ -20,9 +20,10 @@ h1{
     background-repeat: no-repeat;
     background-position: center center;
     height: 100%;
+    filter: blur(3px)
 }
 .banner-text{
-    
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -31,15 +32,26 @@ h1{
     padding: 40px 0;
     text-align: center;
     border-top-left-radius: 70px;
-    border-bottom-left-radius: 70px;
-    background-color: rgb(80, 77, 70);
+    border-bottom-right-radius: 70px;
+    background-color: rgba(14, 14, 14, 0.3);
     color: #fff;
     font-weight: bold;
-    border: 10px inset #fff;    
-    position: absolute;
+    border: 10px inset rgb(255, 255, 255);    
+    
 }
 .banner-text p{
     padding: 0 8%;
-    font-family: merienda;
+    font-family: sans-serif;
 }
 
+a{
+    display: inline-block;
+    padding: 10px 50px;
+    border: 2px solid #fff;
+    color: ghostwhite;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+    
+
+}
