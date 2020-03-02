@@ -1,0 +1,45 @@
+*{
+   font-family: sans-serif;
+}
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.banner-img{
+    background-image: url(trex.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+.banner-text{
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    width: 45%;
+    padding: 40px 0;
+    text-align: center;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    background-color: rgb(80, 77, 70);
+    color: #fff;
+    font-weight: bold;
+    border: 10px inset #fff;    
+    position: absolute;
+}
+.banner-text p{
+    padding: 0 8%;
+    font-family: merienda;
+}
+
