@@ -1,0 +1,19 @@
+.apple{
+    
+    background: turquoise; width:50% ;
+}
+.red{
+    background: red;
+}
+.blue{
+    background: blue;
+}
+span,b,h1,h2,p,ul,li{
+    border: 1px solid #000000;
+}
+div{
+    border: 1px solid #000000;
+}
+#bb{
+    background: yellowgreen;
+}
