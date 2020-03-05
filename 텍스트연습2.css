@@ -1,0 +1,37 @@
+body,html{
+    background: #313468;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 40px ;
+    background-color: rgb(90, 135, 161);
+    
+    width: 500px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 40px;
+    border: 20px inset #ffffff;
+}
+h1{
+    font-size: 50px;
+    color: #ffffff;
+}
+p{
+    padding: 10px 40px;
+    font-weight: 60px;
+    font-size: 30px;
+    color: #ffffff;
+}
+a{
+    padding: 15px 50px;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
