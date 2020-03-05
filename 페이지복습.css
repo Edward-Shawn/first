@@ -3,24 +3,53 @@ body,html{
    margin: 0;
    padding: 0;
 }
-.banner-img{
-    background-image: url(wallpaper.jpeg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100%;
+.main{
+    max-width: 1500px;
+    margin: auto;
 }
+ul{
+    float: right;
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+   
+}
+ul li a{
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+header{
+    background-image: url(bb.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+
 .banner-text{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    
+    border: 10px inset #0c0c0c;
+    color: #050505;
+    background-color: rgba(110, 204, 241, 0.616);
+    font-size: 20px;
     width: 600px;
     padding: 40px 0;
     text-align: center;
     
+}
+a{
+    border: 2px solid black;
+    padding: 5px 10px;
+    transition: 0.25s;
+}
+a:hover{
+    color: white;
+    background-color: black;
 }
