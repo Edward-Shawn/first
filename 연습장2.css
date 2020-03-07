@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    max-width: 1200px;
+    margin: auto;
+}
+body{
+    background-color: seagreen;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.logo,.main-nav{
+    margin-top: 20px;
+}
+.main-nav{
+    float: right;
+}
+.main-nav li{
+    display: inline-block;
+}
+.main-nav li a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "roboto", sans-serif;
+    font-size: 20px;
+}
+.main-nav li.active a{
+    border: 2px solid white;
+}
+.main-nav li a:hover{
+    border: 2px solid white;
+}
+.logo{
+    color: white;
+    float: left;
+    margin-top: 15px;
+}
+.hero{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+h2{
+    font-size: 50px;
+    color: white;
+}
+.button{
+    margin-top: 20px;
+    
+}
+.btn{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border:2px solid white;
+    text-transform: uppercase;
+   
+}
+.btn1 {
+    background-color: white;
+    color: rgb(14, 13, 14);
+    border:2px solid rgb(245, 243, 243);
+}
+.btn2 {
+    
+}
+.btn2:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
