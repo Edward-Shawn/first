@@ -1,0 +1,22 @@
+body{
+ background-color: teal;
+}
+.main-nav{
+    float: right;
+}    
+.main-nav li{
+    display: inline-block;
+
+}
+.main-nav .active a{
+    border: 2px solid white;
+}
+.main-nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+    padding: 5px 20px;
+}
+.main-nav li a:hover{
+    border: 2px solid white;
+}
