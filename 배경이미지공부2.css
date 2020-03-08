@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(33.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.logo img{
+    float: left;
+    height: 40px;
+}
+.nav{
+    float: right;
+    
+}
+ul li{
+    display: inline-block;
+    margin-top: 10px;
+}
+li a{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.hero{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: white;
+    font-size: 80px;
+}
+.hero a{
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px 10px;
+    border: 2px solid white;
+}
