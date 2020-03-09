@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<heml>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Document</title>
+        <script>
+            var name = "Shawn";
+            var year = 1993;
+            var month = 7;
+            var day = 12;
+            var height = 153;
+
+            var adult;
+            var age;
+
+            var myDate = new Date();
+            console.log(myDate);
+            var currentYear = myDate.getFullYear();
+            console.log(currentYear);
+
+            age = currentYear - year;
+
+            if(age < 20){ 
+                adult = "미성년자";
+            } else {   
+                adult = "성년";
+            }
+
+            document.write("hi~"+name +"님 당신은"+ year +"년"+month+"월 "+day+"일에 태어났습니다.<br>");
+            document.write(currentYear + "년 현재 당신의 키는 "+height+"cm입니다.<br>");
+            document.write("당신은 현재"+ age +"살이며, 당신은 " + adult + "입니다.");
+
+        </script>
+        
+    </head>
+
+    <body>
+        <!--ㅇㅇㅇ 님은 1993년에 태어 났습니다.<br>
+        2019년 현재 당신의 키는 180입니다.<br>
+        당신은 현재 28살이며 남자입니다.-->
+    </body>
+</heml>
