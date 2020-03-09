@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <h1>promp()를 활용하여 사용자 입력값 받아오기</h1>
+    <div id="nameText"></div>
+
+    <script>
+        //prompt("이름을 입력하세요","Shawn");
+        var name = window.prompt("이름을 입력해봐","Shawn");
+        //console.leg(name);
+        document.getElementById("nameText").innerText = name;
+    </script>
+</body>
+
+</html>  
