@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    max-width: 1200px;
+    margin: auto;
+}
+.main{
+  float: right;
+}
+
+h1{
+    color: aquamarine;
+    float: left;
+}
+
+ul li{
+    display: inline-block;
+    margin-top: 15px;
+   
+}
+ul li a{
+    color: aquamarine;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid aquamarine;
+    
+}
+
+body{
+    background: #1d2933;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #000000;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid aqua;
+    float: left;
+    padding: 40px;
+}
+
+input[type="text"],input[type="password"]{
+    width: 140px;
+    border: none;
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(37, 79, 107);
+    border: 2px solid aqua;
+    transition: 0.3s;
+    color: aquamarine;
+}
+
+
+
+.text::placeholder{
+    color:aqua;
+}
+
+.password::placeholder{
+    color:aqua;
+}
+
+h2{
+    text-transform: uppercase;
+    color: aquamarine;
+}
+.text:hover{
+    width: 200px;
+}
+
+.password:hover{
+    width: 200px;
+}
+
+
+input[type="submit"]{
+   padding: 10px;
+   border: 0;
+   border-radius: 20px;
+   font-weight: bold;
+    color: aquamarine;
+    background-color: rgb(37, 79, 107);
+    border: 2px solid aquamarine;
+}
+.submit:hover{
+    background-color: aquamarine;
+    color: black;
+}
