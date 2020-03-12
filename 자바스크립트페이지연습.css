@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: aquamarine;
+}
+
+header{
+    max-width: 1200px;
+    margin: auto;
+}
+ .menu{
+    float: right;
+    
+}
+
+ul li{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+}
+.head{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 80px 70px;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.button1,.button2{
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    background: transparent;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+}
+.button1{
+    background: rgb(177, 177, 247);
+}
+.button2{
+    background: yellowgreen;
+}
+
+.black {
+    background-color: rgb(177, 177, 247);
+}
+.black .head{
+    background: white;
+    border-radius: 20px;
+}
+
+.black ul li a{
+    background: white;
+}
+
+
+.blue {
+   background-color: yellowgreen;
+}
+
+.blue .head{
+    background: white;
+    border-radius: 20px;
+}
+.blue ul li a{
+    background: white;
+}
