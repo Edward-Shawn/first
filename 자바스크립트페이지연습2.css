@@ -1,0 +1,53 @@
+body{
+    background: #467e52;
+}
+.main{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid white;
+    padding: 20px 40px;
+    
+}
+.menu{
+    float: right;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 2px solid white;
+}
+h1{
+    text-transform: uppercase;
+    color: white;
+}
+.black-1{
+    background: rgb(219, 171, 171);
+    color: rgb(247, 240, 240), 250);
+    outline: none;
+    padding: 5px 10px;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.white-1{
+    outline: none;
+    border: 2px solid rgb(148, 146, 146);
+    padding: 5px 10px;
+    background: rgb(177, 177, 177);
+    cursor: pointer;
+}
+
+
+.black{
+    background-color: tomato;
+}
+.white{
+    background-color: rgb(85, 85, 85);
+}
