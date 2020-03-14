@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(233, 173, 215);
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    width: 850px;
+}
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    animation: text1 0.8s ;
+    color: rgb(8, 216, 243);
+}
+
+
+.button{
+    cursor: pointer;
+    
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 30px;
+    animation: text2 0.8s;
+    font-weight: bold;
+}
+
+@keyframes text1{
+    0%{
+        letter-spacing: -5px;
+        color: black;
+    }
+    50%{
+        color: rgb(8, 216, 243);
+        letter-spacing: 5px;
+        margin-bottom: -60px;
+        font-size: 55px;
+    }
+    80%{
+        color: rgb(8, 216, 243);
+    }
+   
+}
+
+@keyframes text2{
+    0%{
+        margin-bottom: -60px;
+        color: rgba(255, 255, 255, 0);
+    }
+    50%{
+        margin-bottom: -60px;
+        color: rgba(255, 255, 255, 0);
+    }
+    80%{
+        margin-bottom: -60px;
+    }
+    90%{
+
+    }
+}
