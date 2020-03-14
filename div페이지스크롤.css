@@ -1,0 +1,54 @@
+.one{
+    background-color: #6e6e6e;
+    width: 3000px;
+    margin: auto;
+    height: 2400px;
+}
+.one a{
+    
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    padding: 1000px;
+}
+
+.two{
+    background-color: #bdbcbc;
+    width: 3000px;
+    margin: auto;
+    height: 2400px;
+}
+
+.two a{
+    
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    padding: 1000px;
+}
+.three{
+    background-color: #575555;
+    width: 3000px;
+    margin: auto;
+    height: 2400px;
+}
+.three a{
+    
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    padding: 1000px;
+}
+
+.four{
+    background-color: #bdbcbc;
+    width: 3000px;
+    margin: auto;
+    height: 2400px;
+}
+.four a{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    padding: 1000px;
+}
