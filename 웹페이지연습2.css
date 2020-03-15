@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background: #8be2db;
+    height: 100vh;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section{
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   scroll-snap-align: center;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.title{
+    width: 100%;
+    height: 10vh;
+    background: rgba(5, 5, 5, 0.329);
+    position: fixed;
+}
+
+.navbar{
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+ul li{
+    margin: 0 1rem;
+    margin-top: 15vh;
+}
+ul li a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px 10px;
+    color: black;
+    
+}
+
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 1em;
+    padding: 1rem;
+}
+
+section#home{
+    background-color: rgb(198, 226, 171);
+}
+section#gallary{
+    background-color: rgb(118, 153, 83);
+}
+section#contact{
+    background-color: rgb(206, 226, 116);
+}
+
+
+.text-box{
+    width: 300px;
+    height: 300px;
+    background: rgb(0, 193, 252);
+    margin: 30 0;
+    padding: 60px 40px;
+    border-radius: 20px;
+}
+
+
+.e-mail{
+    width: 100%;
+    
+}
+.subtitle{
+    width: 100%;
+}
+
+
+
+.e-mail,.subtitle{
+    
+    outline: none;
+    border: none;
+    position: relative;
+    border-bottom: 2px solid #0a0a0a;
+    background: none;
+    
+
+}
+
+.button{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+textarea{
+    width: 100%;
+    height: 70px;
+    display: block;
+    
+}
