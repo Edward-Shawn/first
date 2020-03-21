@@ -76,3 +76,56 @@
     background: white !important;
     color: black !important;
 }
+/*-------------service------------------*/
+.service{
+    margin: 75px 0;
+}
+.title{
+    text-align: center;
+    font-weight: bold;
+}
+.subtitle{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 15px;
+}
+.service-box img{
+    width: 80px;
+    margin-top: 65px;
+    margin-bottom: 45px;
+}
+.service-box{
+    padding: 0 35px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+.service-box h6{
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.service-box p{
+    font-size: 14px;
+    color: #808080;
+}
+.fa-arrow-right{
+    font-size: 22px !important;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+.service-box:hover,.active-service{
+    background: rgb(104, 142, 224);
+    border-radius: 5px;
+    color: white !important;
+    box-shadow: 0 15px 15px 2px rgb(178, 172, 235);
+}
+.service-box:hover p{
+    border-radius: 5px;
+    color: #fff !important;
+}
+.active-service p{
+    color: #fff !important;
+}
+
+/*-------feature--------*/
