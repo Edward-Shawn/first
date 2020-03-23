@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            text-align: center;
+            
+        }
+        
+        .on{
+            padding: 10px 20px;
+            background:none;
+            border: none;
+            transition: 0.3s;
+            text-transform: uppercase;
+            border-radius: 5px;
+            outline: none;
+        }
+        .on:hover{
+            background: rgb(6, 255, 255);
+            color: black;
+            box-shadow: 0px 5px 10px 0px rgb(2, 204, 255);
+        }
+        .off{
+            outline: none;
+            padding: 10px 20px;
+            background:none;
+            border: none;
+            transition: 0.3s;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+        .off:hover{
+            background: rgb(6, 255, 255);
+            color: black;
+            box-shadow: 0px 5px 10px 0px rgb(2, 204, 255);
+        }
+    </style>
+</head>
+<html>
+    <body>
+        <h2>what can javascript do?</h2>
+
+        <p>javascript can change HTML attribute values.</p>
+
+        <p>in this case javascript changes the value of the src (source)
+            attribute of an image.</p>
+
+        <button class="on"
+        onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+        turn on the light</button>
+        
+        <img id="myImage" src="pic_bulboff.gif" style="width: 100px;">
+
+        <button class="off"
+        onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+        turn off the light</button>
+    </body>
+</html>
