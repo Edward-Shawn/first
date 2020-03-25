@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var myWindow;
+            function openWin(){
+                myWindow = window.open("https://www.w3schools.com/js/js_window.asp","_blank","width=400, height=200");
+                myWindow.blur();
+            }
+    </script>
+    </head>
+    <body>
+
+        <input type="button" value="Open new Window"
+         onclick="openWin()">
+        <input type="button" value="Blur new Window" 
+        onclick="blurWin()">
+        <input type="button" value="Focus new Window" 
+        onclick="focusWin()">
+
+    </body>
+</html>
