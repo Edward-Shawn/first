@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="제이쿼리닫기.css">
+    <script src="https://kit.fontawesome.com/7b3294b62f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        
+       
+
+        <ul>
+            <li><a id="home">home</a></li>
+            <li><a id="service">service</a></li>
+            <li><a id="gallery">gallery</a></li>
+            <li><a id="contact">contact</a></li>
+        </ul>
+        
+
+         <span class="menu_btn">
+            <i class="fas fa-bars"></i>
+        </span>
+
+    </div>
+
+    <div class="contents1">
+        
+    </div>
+    <div class="contents2">
+        
+    </div>
+    <div class="contents3">
+        
+    </div>
+    <div class="contents4">
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="제이쿼리닫기.js"></script>
+
+    <script>
+        var home = document.getElementById("home");
+      
+        home.onclick = function(){
+            window.scrollTo({top:0, behavior:'smooth'});
+        }
+
+        var service = document.getElementById("service");
+
+        service.onclick = function(){
+            window.scrollTo({top:499, behavior:'smooth'});
+        }
+
+        var gallery = document.getElementById("gallery");
+
+        gallery.onclick = function(){
+            window.scrollTo({top:999, behavior:'smooth'});
+        }
+
+        var contact = document.getElementById("contact");
+
+        contact.onclick = function(){
+            window.scrollTo({top:1500, behavior:'smooth'});
+        }
+
+
+
+    </script>
+
+
+
+</body>
+</html>
