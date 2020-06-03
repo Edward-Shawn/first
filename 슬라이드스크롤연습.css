@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   padding-top: 50px;
+}
+
+
+.menu{
+    background: rgba(255, 255, 255, 0.466);
+    height: 50px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    position: fixed;
+}
+
+#log{
+    width: 100px;
+    float: left;
+    line-height: 50px;
+    background: rgba(0, 0, 0, 0.301);
+}
+
+ul{
+   list-style: none;
+   float: right;
+   margin-right: 10px;
+}
+
+ul li {
+   float: left;
+   line-height: 50px;
+   
+}
+
+ul li a{
+    width: 90px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+.num1{
+    height: 500px;
+    background: rgb(93, 148, 127);
+}
+
+.num2{
+    height: 500px;
+    background: rgb(201, 221, 213);
+}
+
+.num3{
+    height: 500px;
+    background: rgb(79, 103, 114);
+}
+
+.num4{
+    height: 1000px;
+    background: rgb(174, 181, 185);
+}
+

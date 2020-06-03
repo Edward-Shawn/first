@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="슬라이드스크롤연습.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    
+      $(window).scroll(function(){ 
+
+        var height = $(document).scrollTop(); //실시간으로 스크롤의 높이를 측정
+          log(height);
+        
+      });
+
+        function log(str){
+        $('#log').text(str);
+}
+      
+    </script>
+
+    <title>슬라이드크롤연습</title>
+</head>
+<body>
+  
+    <nav class="menu">
+        <div id="log"></div>
+        <ul>
+            <li><a id="one">one</a></li>
+            <li><a id="two">two</a></li>
+            <li><a id="three">three</a></li>
+            <li><a id="four">four</a></li>
+        </ul>
+    </nav>
+    
+
+  
+
+    <div class="num1"></div>
+    <div class="num2"></div>
+    <div class="num3"></div>
+    <div class="num4"></div>
+  
+<script>
+    var one = document.getElementById("one");
+    var two = document.getElementById("two");
+    var three = document.getElementById("three");
+    var four = document.getElementById("four");
+
+    one.onclick = function(){
+       window.scrollTo( top, 0 );
+    }
+
+    two.onclick = function(){
+       window.scrollTo( top, 500 );
+    }
+
+    three.onclick = function(){
+       window.scrollTo( top, 1000 );
+    }
+
+    four.onclick = function(){
+       window.scrollTo( top, 1500 );
+    }
+
+</script>
+
+
+</body>
+
+
+
+</html>
