@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding-top: 50px;
+}
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px black;
+}
+.menu{
+    
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+}
+
+ul{
+    float: right;
+    line-height: 50px;
+}
+ul li{
+    float: left;
+    list-style: none;
+}
+ul li a{
+    
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    width: 100px;
+   text-transform: uppercase;
+}
+ul li a:hover{
+    background: black;
+    color: white;
+}
+
+.page1{
+    width: 100%;
+    height: 500px;
+    background: cornflowerblue;
+}
+.page2{
+    width: 100%;
+    height: 500px;
+    background: rgb(169, 238, 212);
+}
+.page3{
+    width: 100%;
+    height: 500px;
+    background: rgb(202, 142, 241);
+}
+.page4{
+    width: 100%;
+    height: 900px;
+    background: rgb(236, 241, 161);
+}

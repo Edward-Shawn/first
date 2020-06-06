@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/자스이벤트구현.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a id="home">home</a></li>
+                <li><a id="content">content</a></li>
+                <li><a id="service">service</a></li>
+                <li><a id="call">call</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="page1"></div>
+        <div class="page2"></div>
+        <div class="page3"></div>
+        <div class="page4"></div>
+    </section>
+    <script>
+        var home = document.getElementById("home");
+        var content = document.getElementById("content");
+        var service = document.getElementById("service");
+        var call = document.getElementById("call");
+
+            home.onclick = function(){
+                window.scrollTo(top, 0 );
+            }
+        
+            content.onclick = function(){
+                window.scrollTo(top, 500 );
+            }
+
+            service.onclick = function(){
+                window.scrollTo(top, 1000 );
+            }
+
+            call.onclick = function(){
+                window.scrollTo(top, 1500 );
+            }
+
+
+    </script>
+</body>
+</html>
