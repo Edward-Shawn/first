@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://jhammann.github.io/jquery-navScroll/demo/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>jQuery navScroll | Demo</title>
+  <link rel="stylesheet" href="./jQuery navScroll _ Demo_files/style.css">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+</head>
+<body style="">
+  <nav class="nav">
+    <div class="nav-mobile">
+      Click
+    </div>
+    <ul>
+      <li><a href="#section1" class="active">Section 1</a></li>
+      <li><a href="#section2" class="">Section 2</a></li>
+      <li><a href="#section3" data-scrolltime="500" class="">Section 3</a></li>
+    </ul>
+  </nav>
+
+  <div class="scroll-status" style="display: none;">Scrolling ended</div>
+
+  <section id="section1">
+    <h1>Section 1</h1>
+    <p>
+      Drag your screen so its width is below 768 pixels to test the mobile dropdown functionality. <br>
+      You can set the breakpoint with an option. Read more about it in the README.
+    </p>
+  </section>
+  <section id="section2">
+    <h1>Section 2</h1>
+    <p>
+      You can call the plugin on any element you like as long as it contains an anchor tag with an href attribute.<br>
+      See the example button below:
+    </p>
+    <div class="click-me"><a href="http://jhammann.github.io/jquery-navScroll/demo/#section1">Click me!</a></div>
+    <p>
+      Since a button like this doesn't require an offset (it's not fixed like the navigation bar) I set the navHeight option to '0'.
+    </p>
+  </section>
+  <section id="section3">
+    <h1>Section 3</h1>
+    As you may have noticed after clicking the 'Section 3' URL, the duration of the scrolling animation was way longer.<br>
+    You can set a specific scrollTime inside the data-scrolltime attribute (check the source).
+  </section>
+
+  <script src="./jQuery navScroll _ Demo_files/jquery-1.11.0.min.js.다운로드"></script>
+  <script src="./jQuery navScroll _ Demo_files/jquery.navScroll.js.다운로드"></script>
+  <script>
+   
+
+   var $scrollStatus = $('.scroll-status');
+
+$('.nav').navScroll({
+ 
+  onScrollStart: function() {
+   
+  },
+  onScrollEnd: function() {
+   
+    setTimeout(function() {
+      $scrollStatus.fadeOut(200);
+    }, 1000);
+  }
+});
+   
+  </script>
+
+
+</body></html>
