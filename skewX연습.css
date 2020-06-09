@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(184, 217, 248);
+}
+.box{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.418);
+    transform: skewX(-40deg);
+    right: -1000px;
+    transition: all 0.3s;
+}
+.box:hover{
+    right: -500px;
+}
+
+.box>h1{
+    transform: skewX(40deg);
+    padding-left: 70px;
+}
