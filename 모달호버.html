@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모달호버</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .top{
+            width: 100%;
+            height: 50px;
+            background: gray;
+        }
+
+        .mid{
+            width: 100%;
+            height: 600px;
+            background: rgb(172, 182, 158);
+        }
+
+        .con_box{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            background: white;
+        }
+
+        #myimg{
+            display: block;
+            width: 100%;
+            transition:all 0.4s;
+        }
+        #myimg:hover{
+            opacity: 0.5;
+        }
+        .modal{
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: black;
+           display: none;
+           padding-top: 100px;
+        }
+
+        .modal-content{
+            display: block;
+            margin: auto;
+            max-width: 800px;
+        }
+
+        span{
+            top: 15px;
+            right:70px;
+            position: absolute;
+            color: white;
+            font-size: 50px;
+        }
+
+        #caption{
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .modal-content{
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+        @keyframes zoom{
+            from{transform: scale(0);}
+            to{transform: scale(1);}
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <div class="top">
+        <div></div>
+    </div>
+    <div class="mid">
+        <div class="con_box">
+            <img id="myimg" src="img/gg.jpg" alt="ghost">
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="mymodal"></div>
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.querySelector('.modal');
+        var close = document.querySelector('.close');
+        var img = document.getElementById('myimg');
+        var modalImg=document.getElementById('img01');
+        var caption = document.getElementById('caption');
+
+        img.onclick = function(){
+            modal.style.display='block';
+            modalImg.src = this.src;
+            caption.innerHTML = this.alt;
+        }
+
+        close.onclick = function(){
+            modal.style.display='none';
+
+        }
+
+    </script>
+</body>
+</html>
