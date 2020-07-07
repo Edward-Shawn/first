@@ -1,0 +1,8 @@
+*{margin: 0; padding: 0;}
+header{width: 100%; height: 100px; background: gray;}
+.gnb{text-align: center;}
+.gnb li{display: inline-block; line-height: 100px; padding: 0 40px;}
+.gnb li.on{background: white;}
+
+.page1{width: 100%; height: 1000px; background: skyblue;}
+.page2{width: 100%; height: 1000px; background: rgb(89, 122, 134);}
