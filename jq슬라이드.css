@@ -1,0 +1,20 @@
+/* reset */
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none; color: #fff;}
+
+.slideshow{background: #000; height: 456px; width: 960px; overflow: hidden; position: relative; margin: auto;}
+.slideshow .slideshow-slides{position: absolute; width: 100%; height: 100%;}
+.slide{width: 100%; height: 100%; position: absolute; }
+
+.slide:nth-child(1){background: skyblue; left: 0;}
+.slide:nth-child(2){background: rgb(71, 95, 105); left: 0;}
+.slide:nth-child(3){background: rgb(26, 94, 121); left: 0;}
+.slide:nth-child(4){background: rgb(11, 36, 46); left: 0;}
+
+
+.slideshow-nav{width: 960px;  height: 72px; top: 50%; transform: translateY(-50%); position: relative;}
+.slideshow-nav a{width: 72px; height: 72px; overflow: hidden; background: #bbb;
+display: block; position: absolute;}
+.slideshow-nav a.prev{left: 50px; background: white;}
+.slideshow-nav a.next{right: 50px; background: gray;}
