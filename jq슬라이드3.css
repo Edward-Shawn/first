@@ -1,0 +1,19 @@
+*{margin: 0; padding: 0;}
+
+.slidebox{top: 100px; position: relative; width: 800px; height: 400px; background: gray; margin: auto; overflow: hidden;}
+.slide-show{width: 100%; height: 100%; position: absolute;}
+.slide{position: absolute; width: 100%; height: 100%; }
+
+.slide:nth-child(1){background: skyblue; left: 0;}
+.slide:nth-child(2){background: rgb(36, 91, 112); left: 100%;}
+.slide:nth-child(3){background: rgb(118, 116, 233); left: 200%;}
+.slide:nth-child(4){background: rgb(139, 231, 159); left: 300%;}
+
+.btnbox{width: 800px; height: 50px; position: relative; top: 50%; transform: translateY(-50%);}
+.btnbox a{position: absolute; font-size: 30px; overflow: hidden; display: block;}
+.btnbox a.prev{left: 50px;}
+.btnbox a.next{right: 50px;}
+
+.slidebox-indicator{position: absolute; width: 100%; height: 50px;  bottom: 30px; text-align: center;}
+.slidebox-indicator a{display: inline-block; width: 16px; height: 14px; background: #fff; border-radius: 50%; margin: 0 5px;}
+.slidebox-indicator a.active{background: rgb(192, 71, 71);}
