@@ -1,0 +1,28 @@
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+
+.menu{width: 100%; height: 100px; background: rgb(102, 102, 102); box-shadow: 1px 1px 5px black;}
+.menu .fa-bars{color: rgb(221, 221, 221); float: right; margin-right: 50px; margin-top: 25px; font-size: 50px; cursor: pointer; transition:all 0.4s;}
+.menu .fa-bars:hover{text-shadow: 1px 1px 10px white;}
+.menu .gnb{display: none; position: absolute; top: 100px; width: 100%; text-align: center; background: #ddd; z-index: -1; box-shadow: 1px 1px 10px black;}
+.menu .gnb li{ position: relative; cursor: pointer; padding: 40px 0;  text-transform: uppercase; font-size: 20px; font-weight: bold; transition: all 0.4s;}
+.menu .gnb li:hover{background: rgb(198, 201, 193);}
+.menu .gnb li a{color: rgb(99, 99, 99);}
+
+.menu .gnb li.active{background: rgb(182, 187, 172);}
+
+
+.menu .gnb{
+    animation-name: fadeOut;
+    animation-duration: 0.4s;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

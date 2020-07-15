@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7b3294b62f.js" crossorigin="anonymous"></script>
+    <title>모바일클릭메뉴</title>
+    <link rel="stylesheet" href="css/모바일클릭메뉴.css">
+</head>
+<body>
+    <div class="menu">
+        <i class="fas fa-bars"></i>
+        <ul class="gnb">
+            <li class="active"><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function(){
+            
+            $(".menu").click(function(){
+
+                if($(".gnb").css( "display") === "none"){
+                   $( ".gnb" ).css( "display", "block");
+                   
+                }else{
+                    $( ".gnb" ).css( "display", "none");
+                }
+
+            });
+         
+        })
+    </script>
+</body>
+</html>
