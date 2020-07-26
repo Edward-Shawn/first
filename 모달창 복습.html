@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .btn{cursor: pointer; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 10px 10px; font-size: 30px;}
+        .modal{display: none; width: 100%; height: 100%; position: fixed; background: rgba(128, 128, 128, 0.466);}
+        .mymodal{text-align: center; width: 300px; height: 300px; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff;}
+        .mymodal>span{font-size: 30px; color:red; float: right; margin-right: 10px; cursor: pointer;}
+        .mymodal>p{font-size: 30px; padding-top: 100px;}
+    </style>
+</head>
+<body>
+    <button class="btn">click me</button>
+    <div class="modal">
+        <div class="mymodal">
+            <span class="close">&times;</span>
+            <p>hello my world</p>
+        </div>
+    </div>
+    <script>
+        var btn = document.querySelector(".btn");
+        var modal = document.querySelector(".modal");
+        var close = document.querySelector(".close");
+
+        btn.onclick = function(){
+            modal.style.display = "block";
+        }
+        close.onclick = function(){
+            modal.style.display = "none";
+        }
+        window.onclick = function(event){
+            if(event.target == modal){
+                modal.style.display = "none";
+            }
+        }
+
+
+    </script>
+</body>
+</html>
