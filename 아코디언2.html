@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/아코디언2.css">
+    <title>Document</title>
+    <style>
+        li{list-style: none;}
+        a{text-decoration: none;}
+
+        body{height: auto;}
+        .box{width: 200px; text-align: center; height: auto; border: 1px solid red; background: #aaa;} 
+        .box>ul{width: auto; padding: 0; margin: 0; height: auto; border: 1px solid greenyellow;}
+        .box>ul>li>a{font-size: 18px; text-transform: uppercase; display: block; font-weight: bold; padding: 10px 0; color: #000;}
+        .box>ul ul{background: #fff; padding: 0; display: none;}
+        .box>ul ul li a{text-transform: uppercase; border-top: 1px solid #eee; font-size: 12px; padding:10px 0; display: block;}
+        
+
+    </style> 
+</head>
+<body>
+
+    <div class="box">
+        <ul>
+            <li>
+                <a href="">page1</a>
+                <ul>
+                    <li>
+                        <a href="">sub</a>
+                    </li>
+                    <li>
+                        <a href="">sub</a>
+                    </li>
+                    <li>
+                        <a href="">sub</a>
+                    </li>
+                </ul>
+
+            </li>
+            <li>
+                <a href="">page1</a>
+                <ul>
+                    <li>
+                        <a href="">sub</a>
+                    </li>
+                    <li>
+                        <a href="">sub</a>
+                    </li>
+                    <li>
+                        <a href="">sub</a>
+                    </li>
+                </ul>
+                
+            </li>
+            <li>
+                <a href="">page1</a>
+                <ul>
+                    <li>
+                        <a href="">sub</a>
+                    </li>
+                    <li>
+                        <a href="">sub</a>
+                    </li>
+                    <li>
+                        <a href="">sub</a>
+                    </li>
+                </ul>
+                
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/아코디언2.js"></script>
+    <script>
+        $(document).ready(function(){
+
+
+            $(".box>ul>li").on('click', function(e){
+                e.preventDefault()
+
+                if($(this).hasClass("active")){
+                    $(this).removeClass('active');
+                    $(this).children('ul').slideUp();
+                }else{
+                    $('.box>ul>li ul').slideUp();
+                    $('.box>ul>li').removeClass('active');
+                    $(this).addClass("active")
+                    $(this).children('ul').slideDown();
+                }
+            })
+
+
+
+           
+            // $('body').click(function(e){
+            //     e.stopPropagation();
+            //     var $target = $(e.target);
+
+            //     var $ex = $target.hasClass("box");
+
+            //     if (e.target !== this)
+            //         return;
+
+            //     if(!$ex){
+
+            //         alert("abc");
+
+            //     }
+            // });
+
+
+
+
+        })
+    </script>
+</body>
+</html>
